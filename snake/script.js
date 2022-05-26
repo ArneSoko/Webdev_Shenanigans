@@ -196,6 +196,7 @@ function keyPress(e) {//From stackoverflow
     var moved = true;
     var scored = false;
     var rotate = 0;
+    var collision = false;
       
     switch (x) {
       case 37:
@@ -232,22 +233,6 @@ function keyPress(e) {//From stackoverflow
       default:
         moved = false;
     }
-    if(scored){
-        if(body.length==0){
-            body.push(new Body("seg"+body.length,left,top));
-        }
-        else{body.push(new Body("seg"+body.length,body[body.length-1].x,body[body.length-1].y));}
-        setTimeout(move_piece(),1);
-    }
-    for(let i=body.length-1; i>=0;i--){
-        if(left+(a) == body[i].x){
-            if(top+(b) == body[i].y){
-                endGame("lose");
-                moved = false;
-                break;
-            }
-        }
-    }
     
     if(moved){
         document.getElementById(head).style.transform = "rotate("+rotate+"deg)";
@@ -258,6 +243,23 @@ function keyPress(e) {//From stackoverflow
                 placeSeg(body[i],body[i-1].x, body[i-1].y);
             }
             placeSeg(body[0], left, top);
+            for(let i=0; i < body.length; i++){
+                if((body[i].x == hleft) && (body[i].y == htop)){
+                    collision = true;
+                    break;
+                }
+            }
+        }
+        if(collision){
+            endGame("lose");
+            scored = false;
+        }
+        if(scored){
+            if(body.length==0){
+                body.push(new Body("seg"+body.length,left,top));
+            }
+            else{body.push(new Body("seg"+body.length,body[body.length-1].x,body[body.length-1].y));}
+            setTimeout(move_piece(),1);
         }
         update();
     }
