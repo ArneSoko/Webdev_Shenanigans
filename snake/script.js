@@ -79,7 +79,6 @@ function update(){ //From stackoverflow
 /*
 TODO:
 >Fix drifting on zoomed in page
->Add a method to customize board size
 Optional:
 >Change graphics
 >Toggle borders wrapping or blocking
