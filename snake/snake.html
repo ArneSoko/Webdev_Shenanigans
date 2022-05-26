@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>snek :DDD</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body onload="newGame()">
+        <div id="control">
+            <p id="score">Score = 0</p>
+            <button id="new" onclick="buttonClick()">Reset</button>
+            <div id="size">
+                <p>Board size:</p>
+                <input id="in" type="number" min="4" max="9" value="6">
+            </div>
+        </div>
+        <div id="wrapper">
+            <script src="script.js"></script>
+            <div class="snake">
+                <div id= "snhead" class="snakehead">
+                    <img src="assets/head.png" width="100px" height="100px">
+                </div>
+                <div id="snbody" class="snakebody">
+                    
+                </div>
+            </div>
+            
+            <div id="board" class="board"></div>
+            <div id="piece" class ="piece">
+                <img src="assets/pnt.png" width="100px" height="100px">
+            </div>
+        </div>
+    </body>
+</html>
