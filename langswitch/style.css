@@ -1,6 +1,7 @@
 body{
     background-color: aquamarine;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 body h1{
     color:rgb(221, 94, 189);
@@ -12,6 +13,11 @@ body p{
     font-style: italic;
     text-align: center;
 }
+
+#wrapper{
+    text-align: center;
+}
+
 a{
     color:rgb(23, 134, 161);
     font-family: 'Courier New', Courier, monospace;
@@ -53,16 +59,15 @@ a:hover{
 }
 
 #move{
-    position: absolute;
-    top: 65%;
+    position: relative;
+    top:250px;
     z-index: -1; /*From stackoverflow*/
     filter: invert(0);
-    margin: auto;
-    width: fit-content;
-    text-align: center;
+    margin: 0 auto;
+    width: 192px;
 }
 #move embed{
-    width: 40%;
+    width: 100%;
 }
 
 #confirm {/*From stackoverflow*/
