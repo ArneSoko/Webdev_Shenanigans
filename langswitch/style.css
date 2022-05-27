@@ -2,6 +2,7 @@ body{
     background-color: aquamarine;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    height: 95%;
 }
 body h1{
     color:rgb(221, 94, 189);
@@ -24,6 +25,7 @@ a{
     color:rgb(23, 134, 161);
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     border-radius: 20px;
@@ -44,6 +46,7 @@ a:hover{
     color:rgb(23, 134, 161);
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
+    z-index: 2;
     top: 80%;
     margin: auto;
     border-radius: 20px;
@@ -63,7 +66,7 @@ a:hover{
 #move{
     position: relative;
     top:250px;
-    z-index: -1; /*From stackoverflow*/
+    z-index: 1; /*From stackoverflow*/
     filter: invert(0);
     margin: 0 auto;
     width: 192px;
@@ -79,6 +82,7 @@ a:hover{
     border: 1px solid rgb(5, 143, 161);
     border-radius: 5px;
     position: absolute;
+    z-index: 3;
     width: 300px;
     height: 100px;
     left: 50%;
@@ -115,6 +119,7 @@ a:hover{
     box-shadow: 0 5px #8283bd;
     margin: 0;
     position: absolute;
+    z-index: 2;
     top: 20%;
     left: 50%;
     -ms-transform: translate(-50%, 20px);
@@ -152,4 +157,19 @@ a:hover{
     left: 50%;
     -ms-transform: translate(-50%, 25px);
     transform: translate(-50%, 25px);
+}
+
+#doge{
+    position: absolute;
+    z-index: 0;
+    top: 5px;
+    left:5px;
+    text-align: left;
+    height:630px;
+    width: 350px;
+    border: 0;
+}
+#doge #dogePage{
+    height: 100%;
+    width: 100%;
 }
