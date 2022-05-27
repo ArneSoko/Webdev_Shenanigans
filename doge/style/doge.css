@@ -1,0 +1,29 @@
+body {
+    background-color: palegreen;
+    color: darkred;
+}
+body h1{
+    color: orangered;
+}
+body button{
+    background-color: orchid;
+    color: white;
+    border: 0;
+    position: relative;
+    z-index: 5;
+}
+body button:hover{
+    background-color: blueviolet;
+}
+body button:disabled{
+    background-color: darkblue;
+}
+body button:active{
+    background-color: blue;
+}
+body h4{
+    color: darkorchid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+}
