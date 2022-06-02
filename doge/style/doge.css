@@ -15,11 +15,11 @@ body button{
 body button:hover{
     background-color: blueviolet;
 }
-body button:disabled{
-    background-color: darkblue;
-}
 body button:active{
     background-color: blue;
+}
+body button:disabled{
+    background-color: darkblue;
 }
 body h4{
     color: darkorchid;
