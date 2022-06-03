@@ -9,4 +9,4 @@ the buttons links to arvin.moe, which I am not associated with.
 snake.html is actually a somewhat serious attempt at recreating snake from scratch on a platform I am unfamiliar with.
 
 doge.html is an earlier attempt at working with html, javascript, and CSS. Slight edits to the javascript, namely replacing the local source image files with imgur
-links, made by Arvin Ziaei.
+links, made by Arvin Ziaei: (the owner of arvin.moe).
